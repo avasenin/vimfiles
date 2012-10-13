@@ -24,6 +24,8 @@ Bundle "garbas/vim-snipmate"
 Bundle "ervandew/supertab"
 Bundle "vim-scripts/VimClojure"
 
+Bundle "scrooloose/nerdtree"
+
 filetype plugin indent on
 set backspace=indent,eol,start
 
