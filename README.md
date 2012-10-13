@@ -26,5 +26,5 @@ You need to set up nailgun and provide the correct url to nailgan client in vimr
 * [vim-snipmate](http://github.com/garbas/vim-snipmate) - TextMate snippets for Vim
 * [snipmate-snippets](http://github.com/hoza/snipmate-snippets) - collection of snippets for vim-snipmate plagin
 * [supertab](http://github.com/ervandew/supertab) - Tab auto-completion
-
+* [nerdtree](http://github.com/scrooloose/nerdtree) - File tree inside vim
 
