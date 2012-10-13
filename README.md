@@ -7,6 +7,10 @@ This is my ~/.vim directory and I use this setting to work with my Ruby on Rails
 Clone this repo
 `git clone https://github.com/avasenin/vimfiles.git ~/.vim`
 
+Then ‘cd’ into the repo and run this to get the vundle submodule:
+
+`git submodule update --init`
+
 Make sure vim finds the vimrc file by either symlinking it:
 `ln -s ~/.vim/vimrc ~/.vimrc`
 
