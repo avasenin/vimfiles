@@ -76,9 +76,10 @@ set nofoldenable        "dont fold by default
 
 set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+set wildignore=*.o,*.obj,*~,*.class "stuff to ignore when tab completing
 
-set listchars=tab:\ \ ,extends:>,precedes:<
+set listchars=tab:▸\ ,trail:·,extends:>,precedes:<
+set list
 
 set formatoptions-=o "dont continue comments when pushing o/O
 
@@ -104,6 +105,7 @@ let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#WantNailgun = 1
 let vimclojure#NailgunClient = "/usr/local/share/vimclojure-nailgun-client/ng"
 let vimclojure#SplitPos = "bottom"
+let g:ctrlp_switch_buffer = 0
 
 
 if has("gui_running")
@@ -167,3 +169,13 @@ nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
 
+
+" PeepOpen uses <Leader>p as well so you will need to redefine it so something
+" else in your ~/.vimrc file, such as:
+" nmap <silent> <Leader>q <Plug>PeepOpen
+
+"silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+
+"make <c-l> clear the highlight as well as redraw
+nnoremap <C-L> :nohls<CR><C-L>
+inoremap <C-L> <C-O>:nohls<CR>
