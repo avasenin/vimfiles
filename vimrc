@@ -13,10 +13,9 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
-
+Bundle 'jimenezrick/vimerl'
 Bundle "ervandew/supertab"
 Bundle "tpope/vim-fireplace"
-
 Bundle "scrooloose/nerdtree"
 
 filetype plugin indent on
