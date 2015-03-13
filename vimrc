@@ -12,17 +12,10 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails.git'
 Bundle 'kien/ctrlp.vim'
 
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
-
-
 Bundle "ervandew/supertab"
-Bundle "vim-scripts/VimClojure"
+Bundle "tpope/vim-fireplace"
 
 Bundle "scrooloose/nerdtree"
 
@@ -100,13 +93,7 @@ set smartcase
 set noswapfile
 set nobackup
 
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
-let g:vimclojure#WantNailgun = 1
-let vimclojure#NailgunClient = "/usr/local/share/vimclojure-nailgun-client/ng"
-let vimclojure#SplitPos = "bottom"
 let g:ctrlp_switch_buffer = 0
-
 
 if has("gui_running")
     "tell the term has 256 colors
@@ -179,3 +166,5 @@ vmap <D-]> >gv
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
+
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
