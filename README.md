@@ -13,6 +13,7 @@ Then ‘cd’ into the repo and run this to get the vundle submodule:
 
 Make sure vim finds the vimrc file by either symlinking it:
 `ln -s ~/.vim/vimrc ~/.vimrc`
+`ln -s ~/.vim/.bash_profile ~/.bash_profile`
 
 or by sourcing it from  your own ~/.vimrc:
 `source ~/.vim/vimrc`
