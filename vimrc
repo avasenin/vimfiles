@@ -55,9 +55,9 @@ set guioptions-=L
 set guioptions-=r
 
 "indent settings
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 
@@ -68,7 +68,7 @@ set nofoldenable        "dont fold by default
 
 set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~,*.class "stuff to ignore when tab completing
+set wildignore=*.o,*.obj,*~,*.class,*.beam "stuff to ignore when tab completing
 
 set listchars=tab:▸\ ,trail:·,extends:>,precedes:<
 set list
